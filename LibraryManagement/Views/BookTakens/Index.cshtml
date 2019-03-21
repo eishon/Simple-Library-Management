@@ -1,0 +1,54 @@
+﻿@model IEnumerable<LibraryManagement.Models.BookTaken>
+
+@{
+    ViewData["Title"] = "Books Taken";
+}
+
+<h2>Books Taken</h2>
+
+<p>
+    <a asp-action="Create">Issue New Book</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TakingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TakenBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TakenBook)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TakingDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TakenBy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TakenBook)
+                </td>
+                <td>
+                    @*<a asp-action="Edit" asp-route-id="@item.ID">Edit</a>*@ |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Book Returned</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

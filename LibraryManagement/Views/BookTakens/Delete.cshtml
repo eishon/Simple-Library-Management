@@ -1,0 +1,38 @@
+﻿@model LibraryManagement.Models.BookTaken
+
+@{
+    ViewData["Title"] = "Book Returned";
+}
+
+<h2>Book Returned</h2>
+
+<h3>Is the Book Returned?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TakingDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TakingDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TakenBy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TakenBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TakenBook)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TakenBook)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Confirm" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

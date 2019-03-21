@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180828095148_Initial.cs" />
+    <Compile Remove="Migrations\20180828095148_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20180828100401_second.cs" />
+    <Compile Remove="Migrations\20180828100401_second.Designer.cs" />
+    <Compile Remove="Migrations\20180828101812_fifth.cs" />
+    <Compile Remove="Migrations\20180828101812_fifth.Designer.cs" />
+    <Compile Remove="Migrations\20180828104200_Initial.cs" />
+    <Compile Remove="Migrations\20180828104200_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20180828104749_Initial.cs" />
+    <Compile Remove="Migrations\20180828104749_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20180828113621_Second.cs" />
+    <Compile Remove="Migrations\20180828113621_Second.Designer.cs" />
+    <Compile Remove="Migrations\20180828113832_Initial.cs" />
+    <Compile Remove="Migrations\20180828113832_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20180828135851_Second.cs" />
+    <Compile Remove="Migrations\20180828135851_Second.Designer.cs" />
+    <Compile Remove="Migrations\20180828183841_Initial.cs" />
+    <Compile Remove="Migrations\20180828183841_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20180828184106_Initial.cs" />
+    <Compile Remove="Migrations\20180828184106_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20180828184821_Initial.cs" />
+    <Compile Remove="Migrations\20180828184821_Initial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
